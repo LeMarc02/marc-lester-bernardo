@@ -1,5 +1,265 @@
-<center>
-<img src="new.png" width="100%"/>
-<br/>
-<img src="ceu_codecamp.jpg"/>
-</center>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <Title> Portfolio</Title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <style>
+      @media (max-width: 992px) {
+        .affix {
+          position: relative;
+          padding: 0;
+          margin: 0;
+        }
+      }
+
+      body {
+        -webkit-font-smoothing: antialiased;
+        font-family: Arial, sans-serif;
+      }
+
+      header {
+        padding: 5vh;
+        height: 90vh;
+        background-image: url(slider.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      nav {
+        height: 10vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
+
+      section {
+        padding: 2.5vh;
+      }
+
+      footer {
+        background-color: #ecedef;
+        font-size: 1.5vh;
+        text-align: center;
+        padding: 2vh;
+      }
+
+      li {
+        padding: 0 10px;
+        cursor: pointer;
+        cursor: hand;
+      }
+
+      a {
+        color: #000;
+      }
+
+      a:hover {
+        color: #00ccbc;
+        text-decoration: none;
+      }
+
+      h1 {
+        font-size: 5vh;
+        font-weight: bold;
+        padding-bottom: 2.5vh;
+        -webkit-margin-before: 0;
+        -webkit-margin-after: 0;
+      }
+
+      h2 {
+        font-size: 2.5vh;
+        font-weight: bold;
+      }
+
+      p {
+        font-size: 2.3vh;
+      }
+
+      .main-paragraph {
+        font-size: 9vh;
+        font-weight: bolder;
+        line-height: 9vh;
+        text-align: center;
+        color: #000;
+      }
+
+      .affix {
+        top: 0;
+        width: 100%;
+        background-color: #fff;
+        z-index: 100;
+        border-bottom: 4px solid #00ccbc;
+      }
+
+      .menu-bar {
+        font-size: 2.5vh;
+        line-height: 2.5vh;
+        font-weight: bold;
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .options {
+        background-color: #00ccbc;
+        color: white;
+        text-align: center;
+      }
+
+      .shape {
+        border: 0.5vh solid #fff;
+        background: transparent;
+        width: 10vh;
+        height: 10vh;
+        border-radius: 10vh;
+        display: block;
+        line-height: 10vh;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 5vh;
+      }
+
+      .option {
+        text-align: center;
+        padding: 2.5vh;
+      }
+
+      .about {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 5vh;
+        background-color: #ecedef;
+      }
+
+      .about-title {
+        padding-bottom: 10px;
+      }
+
+      .contact {
+        background-color: #00ccbc;
+        color: white;
+        text-align: center;
+        padding: 5vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .contact-button {
+        border-radius: 2px;
+        background: transparent;
+        border: 1px solid #fff;
+        color: #fff;
+        padding: 5px 0;
+        margin: 5px auto;
+        font-size: 2vh;
+        font-weight: bold;
+        letter-spacing: .05em;
+        width: 20vh;
+        display: block;
+      }
+
+      .contact-button:hover {
+        background: #fff;
+        border-color: #fff;
+        color: #00ccbc;
+        cursor: pointer;
+        cursor: hand;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <header class="row">
+        <div class="col-md-8">
+          <p class="main-paragraph">
+            Hello, my name is Marc Lester, a 3rd year student aspiring to become Web developer
+          </p>
+        </div>
+      </header>
+
+      <!-- Navigation Bar -->
+      <nav class="row" data-spy="affix" data-offset-top="630" data-offset-bottom="0">
+        <ul class="menu-bar">
+          <li><a href="#work">WORK</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+
+      <!-- Work Section -->
+      <a name="work"></a>
+      <section class="row options">
+        <div class="col-md-4 option">
+          <span class="shape"><i class="glyphicon glyphicon-tint"></i></span>
+          <h2>Web Design</h2>
+          <p>I enjoy crafting visually appealing and responsive websites that are both functional and aesthetically pleasing.
+          </p>
+        </div>
+        <div class="col-md-4 option">
+          <span class="shape"><i class="glyphicon glyphicon-chevron-left"></i></span>
+          <h2>Development</h2>
+          <p>I’m passionate about building robust and scalable web applications, focusing on clean code and efficient solutions.
+          </p>
+        </div>
+        <div class="col-md-4 option">
+          <span class="shape"><i class="glyphicon glyphicon-phone"></i></span>
+          <h2>User Interface</h2>
+          <p>I focus on creating intuitive and engaging user interfaces, ensuring a smooth and enjoyable user experience.
+          </p>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <a name="about"></a>
+      <main class="row">
+        <div class="about">
+          <div class="col-md-5">
+            <h1>ABOUT</h1>
+            <p>
+                Hi, I'm Marc, a student developer studying BSIT at Arellano University. I'm passionate about coding and love building projects with  JavaScript, Python, React. I'm always looking to learn, collaborate, and improve my skills in areas like web development. Outside of coding, I enjoy playing games. Let’s connect!
+
+            </p>
+          </div>
+          <div class="col-md-3">
+            <img src="profile.jpg" alt="Profile image of Marc" height="100%" width="100%">
+          </div>
+        </div>
+      </main>
+
+      <!-- Contact Section -->
+      <a name="contact"></a>
+      <section class="row contact">
+        <h1>CONTACT</h1>
+        <p class="col-md-7">
+          +09669211708<br>
+          marclesteryap@gmail.com
+        </p>
+        <div class="contact-button">
+          GET IN TOUCH
+        </div>
+      </section>
+
+      <!-- Footer Section -->
+      <footer class="row">
+        <p>© 2025 Made with love</p>
+      </footer>
+    </div>
+  </body>
+</html>
